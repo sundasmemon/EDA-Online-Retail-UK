@@ -56,8 +56,45 @@ Top 10 customers alone = 16% of total revenue (£3.27M).
 Top customer (ID 18102) = £580,987 — 2.8% of total revenue from one account.
 <img width="1389" height="490" alt="customer_concentration" src="https://github.com/user-attachments/assets/2639ef9b-b359-43bd-b4af-f1ea1a9b1c6c" />
 
+## Finding 6 — International markets are underdeveloped
+UK = 85% of revenue (£17.4M). Only 15% from 42 other countries.
+EIRE (£658K), Netherlands (£554K), Germany (£425K) are proven markets.
+Australia shows high average order value despite few customers.
+<img width="1589" height="611" alt="country_distribution" src="https://github.com/user-attachments/assets/f74753b9-74f7-4715-971b-ae38e272df75" />
+
+## Finding 7 — Revenue is driven by volume, not price
+Quantity → Revenue correlation: 0.81 (very strong).
+Price → Revenue correlation: 0.25 (weak).
+63% of products priced £1–5. Median unit price: £2.10.
+
+Note: Price elasticity analysis was considered but not executed.The dataset lacks sufficient price variation per product to produce statistically valid elasticity coefficients.
+<img width="742" height="590" alt="correlation_heatmap" src="https://github.com/user-attachments/assets/779f4057-14bb-4678-9363-a2ad69ad28c6" />
 
 
+## Project Workflow
+
+### 1. Data Cleaning & Preparation
+* Consolidated transactional data across both fiscal years.
+* Handled missing values within critical fields such as `Customer ID` and `Description`.
+* Filtered and separated negative transactions to accurately isolate successful sales from returns and cancellations.
+* Formatted dates and created time-based fields (`YearMonth`, `Year`) for chronological tracking.
+
+### 2. Exploratory Data Analysis & Aggregation
+* Engineered a `Revenue` metric computed as $Quantity \times Price$.
+* Grouped transactions chronologically to map out the monthly revenue trajectory.
+* Segmented the customer base to distinguish revenue shares between one-time buyers and loyal repeat customers.
+* Aggregated revenue metrics by product descriptions and geographic regions to extract top performers.
+
+### 3. Dashboard Design & Reporting
+* Developed an intuitive dashboard layout to present high-level KPIs clearly.
+* Built trend lines, bar charts, and composition metrics to visualize complex commercial patterns at a glance.
+
+## Technologies Used
+* **Python** (Pandas, NumPy for data manipulation)
+* **Matplotlib & Seaborn** (For statistical visualization during data exploration)
+* **Jupyter Notebook**
+* **Power BI** (For interactive dashboard and business reporting)
+  
 
 
 
