@@ -23,3 +23,43 @@ The dataset features two primary tables representing different timeframes:
 ## Project Overview
 The objective of this project is to analyze historical transactions to identify revenue drivers, evaluate customer purchasing behavior, and uncover operational inefficiencies. By cleaning and aggregating millions of data points, this analysis provides clear visibility into product performance, regional growth, and customer lifetime value.
 A UK-based wholesale giftware retailer selling to small shop owners and businesses (B2B).Customers order in pack sizes of 12, 24, 48 units. 91% of revenue from UK. 43 countries in total.
+<img width="2465" height="1482" alt="EDA-Project" src="https://github.com/user-attachments/assets/002f2176-f01f-4f38-8087-9944a62f195c" />
+## Key Findings
+
+## Finding 1 — Zero revenue growth over 2 years
+Revenue in 2010: £9,833,100. Revenue in 2011: £9,820,676. 
+Growth: -0.1%. The business is in maintenance mode, not growth mode.
+New customers are replacing churned ones, not adding to the base.
+<img width="1589" height="985" alt="monthly_trend" src="https://github.com/user-attachments/assets/4017f70b-ef8b-4428-acc3-a4ef85af3689" />
+
+## Finding 2 — Q4 drives 37% of all revenue
+November is the biggest month every year (£2.97M combined across both years).
+October, November, December = £7.56M out of £20.47M total revenue.
+February experiences the slowest sales of the year, dipping down to a performance that is 2.8 times smaller than the November peak.
+<img width="1389" height="490" alt="seasonality" src="https://github.com/user-attachments/assets/58314bf4-d9d1-4f72-893b-9d05e2aa9acf" />
+
+## Finding 3 — Repeat buyers generate 96.8% of revenue
+One-time buyers = 27.6% of customers but only 3.2% of revenue (£560K).
+Repeat buyers = 72.4% of customers and generate £16.8M.
+974 loyal customers (10+ orders) are the backbone of the business.
+<img width="1250" height="495" alt="customer_loyalty" src="https://github.com/user-attachments/assets/2a3af350-90d3-4ad1-916b-03a86d72b1f4" />
+
+## Finding 4 — 34% cancellation rate: a severe operational vulnerability
+13,676 of 40,077 orders were cancelled or returned.
+Revenue lost: £1,620,726 (7.9% of clean revenue).
+At typical wholesale margins, true profit cost is £600K–£800K annually.
+<img width="1189" height="490" alt="returns_by_country" src="https://github.com/user-attachments/assets/b96beaac-78d9-4815-9a49-847c909929e3" />
+
+## Finding 5 — 23% of customers generate 80% of revenue
+1,353 customers out of 5,878 drive 80% of all revenue.
+Top 10 customers alone = 16% of total revenue (£3.27M).
+Top customer (ID 18102) = £580,987 — 2.8% of total revenue from one account.
+<img width="1389" height="490" alt="customer_concentration" src="https://github.com/user-attachments/assets/2639ef9b-b359-43bd-b4af-f1ea1a9b1c6c" />
+
+
+
+
+
+
+
+
